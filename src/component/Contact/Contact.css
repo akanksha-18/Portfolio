@@ -1,58 +1,78 @@
 /* Contact.css */
+.contactContainer {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Add a max-width to ensure responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+}
 
-.contactPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contactPageTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactDesc {
+  text-align: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the form horizontally */
+}
+
+.formGroup {
+  width: 100%; /* Set width to 100% */
+  max-width: 400px; /* Set a max-width to limit width */
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block; /* Display the label as block element */
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  width: 100%;
+  max-width: 200px; /* Set a max-width for the button */
+  padding: 10px;
+  background-color: #f1f3f6;
+  color: black;
+  border: 2px solid #04070a;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #d5e6f8;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    width: 90%; /* Adjust the width for smaller screens */
   }
-  
-  .contactPageTitle {
-    text-align: center;
-  }
-  
-  .contactDesc {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contactForm input,
-  .contactForm textarea {
-    width: 500px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  .contactForm input:hover,
-  .contactForm textarea:hover{
-    border: 2px solid black;
-  }
-  
-  .contactForm textarea {
-    resize: vertical; 
-  }
-  
-  .contactForm .submitBtn {
-    width: 300px;
-    padding: 10px;
-    background-color: #f1f3f6;
-    color: black;
-    border: 2px solid #04070a; 
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contactForm .submitBtn:hover {
-    background-color: #d5e6f8;
-  }
-  
+}

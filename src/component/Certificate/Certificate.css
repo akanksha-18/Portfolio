@@ -1,0 +1,36 @@
+#certificate {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .worksTitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .worksDesc {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    display: block;
+  }
+  
+  .worksImgs {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .worksImgContainer {
+    width: 300px; /* Adjust this width as needed */
+    margin-right: 20px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  .worksImg {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 300px; /* Adjust this height as needed */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
