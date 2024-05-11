@@ -1,0 +1,127 @@
+
+
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px yellow;
+  }
+  50% {
+    box-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 60px yellow;
+  }
+  100% {
+    box-shadow: 0 0 10px yellow;
+  }
+}
+
+.bgWrapper {
+    position: absolute;
+    height: 70%; 
+    width: 450px; 
+    top: 50%; 
+    right: 1%; 
+    transform: translateY(-50%); 
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    animation: glow 3s infinite alternate; 
+  }
+  
+  .bg {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+
+.introContent {
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+.introName {
+  color: yellow;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 500;
+}
+
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btnImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+.introText, .introName {
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: typing 4s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bgWrapper {
+    right: -10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .introContent {
+    font-size: 10vw;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+  .introText, .introName {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bgWrapper {
+    right: -20vw;
+  }
+}
