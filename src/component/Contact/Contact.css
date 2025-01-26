@@ -1,78 +1,75 @@
-/* Contact.css */
-.contactContainer {
-  width: 80%; /* Adjust the width as needed */
-  max-width: 600px; /* Add a max-width to ensure responsiveness */
-  margin: 0 auto; /* Center the container horizontally */
+.contactPage {
+  padding: 2rem;
+  background-color: #121212; 
+  color: #f5f5f5; 
+  font-family: Arial, sans-serif;
 }
 
+
 .contactPageTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  color: #ffffff; 
+  margin-bottom: 1rem;
 }
 
 .contactDesc {
+  font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 2rem;
+  color: #cccccc; 
+}
+
+
+.contactLinks {
   display: flex;
-  margin-bottom: 20px;
   justify-content: center;
+  gap: 2rem;
 }
 
-.contactForm {
+.contactLink {
+  text-decoration: none;
+  color: #f5f5f5; 
+  font-size: 1.2rem;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the form horizontally */
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 2px solid #333; 
+  border-radius: 8px;
+  background-color: #1e1e1e; 
 }
 
-.formGroup {
-  width: 100%; /* Set width to 100% */
-  max-width: 400px; /* Set a max-width to limit width */
-  margin-bottom: 20px;
+.contactLink:hover {
+  color: #1e90ff; 
+  border-color: #1e90ff; 
+  background-color: #2a2a2a; 
+  transform: scale(1.1);
 }
 
-.formGroup label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block; /* Display the label as block element */
+.contactIcon {
+  font-size: 2rem;
 }
 
-.formGroup input,
-.formGroup textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
-.formGroup textarea {
-  resize: vertical;
-}
-
-.submitBtn {
-  width: 100%;
-  max-width: 200px; /* Set a max-width for the button */
-  padding: 10px;
-  background-color: #f1f3f6;
-  color: black;
-  border: 2px solid #04070a;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submitBtn:hover {
-  background-color: #d5e6f8;
-}
-
-.message {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
-  .contactContainer {
-    width: 90%; /* Adjust the width for smaller screens */
+  .contactPageTitle {
+    font-size: 2rem;
+  }
+
+  .contactDesc {
+    font-size: 1rem;
+  }
+
+  .contactLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contactLink {
+    justify-content: center;
   }
 }
