@@ -22,8 +22,8 @@
 
 .bgWrapper {
     position: absolute;
-    height: 70%; 
-    width: 450px; 
+    height: 65%; 
+    width: 350px; 
     top: 50%; 
     right: 1%; 
     transform: translateY(-50%); 

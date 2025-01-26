@@ -4,7 +4,7 @@ import logo from '../../assets/icon.png';
 import contactImg from '../../assets/contact.png';
 import { Link } from 'react-scroll';
 import menu from '../../assets/menu.png';
-import resumePdf from '../../assets/Akanksha_Resume.pdf';
+import resumePdf from '../../assets/Resume_Akanksha.pdf';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
