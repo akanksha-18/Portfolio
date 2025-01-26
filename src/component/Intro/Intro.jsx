@@ -9,8 +9,18 @@ const Intro = () => {
     <section id='intro'>
       <div className="introContent">
         <span className='hello'>Hello</span>
-        <span className='introText'>I'm <span className='introName'>Akanksha</span><br />Full stack developer</span>
-        <p className='introPara'>I'm a full-stack developer proficient in Java, excelling in both frontend and backend <br /> development. With mastery in HTML, CSS, and React for the frontend, <br /> paired with Java for backend logic.</p>
+        <span className='introText'>
+  Hi, I'm <span className='introName'>Akanksha</span>
+  <br />
+  Full-Stack Developer
+</span>
+<p className='introPara'>
+  I'm a passionate full-stack developer specializing in building dynamic and scalable web applications. 
+  <br></br>
+  With expertise in modern frontend technologies like HTML, CSS, and React, paired with powerful <br /> backend tools like Node.js and MongoDB, 
+  I bring ideas to life with seamless functionality and <br></br>user-friendly designs.
+</p>
+
        
         <a href="mailto:akankshadubey2558@gmail.com">
   <button className="btn">
